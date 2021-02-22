@@ -1,0 +1,16 @@
+{
+  "name": "typeScript",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "watch": "tsc --watch",
+    "start": "node dist/main"
+  },
+  "keywords": [
+    "typeScript",
+    "javaScript"
+  ],
+  "author": "Tu Nombre",
+  "license": "MIT"
+}
