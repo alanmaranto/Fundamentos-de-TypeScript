@@ -27,3 +27,20 @@ var createPic = function (title, date, size) {
 };
 var picture = createPic("murket", "2021-09-10", "500x500");
 console.log("picture", picture);
+// Tipo de retorno
+function handleError(code, message) {
+    // Procesamiento del codigo, mensaje
+    if (message === "error") {
+        throw new Error(message + ". Code error: " + code);
+    }
+    else {
+        return "An error has ocurred";
+    }
+}
+try {
+    var result = handleError(200, "ok"); // string
+    console.log("result", result);
+    result = handleError(404, "error"); // never
+    console.log("new result", result);
+}
+catch (error) { }

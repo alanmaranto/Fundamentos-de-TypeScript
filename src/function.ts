@@ -35,4 +35,19 @@ let createPic = (title: string, date: string, size: SquareSize): object => {
 const picture = createPic("murket", "2021-09-10", "500x500");
 console.log("picture", picture);
 
+// Tipo de retorno
+function handleError(code: number, message: string): never | string {
+  // Procesamiento del codigo, mensaje
+  if (message === "error") {
+    throw new Error(`${message}. Code error: ${code}`);
+  } else {
+    return "An error has ocurred";
+  }
+}
 
+try {
+  let result = handleError(200, "ok"); // string
+  console.log("result", result);
+  result = handleError(404, "error"); // never
+  console.log("new result", result);
+} catch (error) {}
