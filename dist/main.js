@@ -31,5 +31,5 @@ username = "Alan";
 // Template String
 // Uso de back-tick ``
 var userInfo;
-userInfo = "\n    User Info:\n    username: " + username + "\n    firstName: " + (username + " Maranto ") + "\n    phone: " + phone + "\n    isPro: " + isPro + "\n";
+userInfo = "\n    User Info:\n    username: ".concat(username, "\n    firstName: ").concat(username + " Maranto ", "\n    phone: ").concat(phone, "\n    isPro: ").concat(isPro, "\n");
 console.log("userinfo", userInfo);

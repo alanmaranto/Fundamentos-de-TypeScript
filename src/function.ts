@@ -3,6 +3,8 @@
 //     // title
 // }
 
+export {}
+
 type SquareSize = "100x100" | "500x500" | "1000x1000";
 
 /* function createPicture(title: string, date: string, size: SquareSize) {

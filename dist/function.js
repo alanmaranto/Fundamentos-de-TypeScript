@@ -3,6 +3,7 @@
 // function createPicture(title, data, size) {
 //     // title
 // }
+Object.defineProperty(exports, "__esModule", { value: true });
 /* function createPicture(title: string, date: string, size: SquareSize) {
   // creates picture
   console.log("create picture using", title, date, size);
@@ -31,7 +32,7 @@ console.log("picture", picture);
 function handleError(code, message) {
     // Procesamiento del codigo, mensaje
     if (message === "error") {
-        throw new Error(message + ". Code error: " + code);
+        throw new Error("".concat(message, ". Code error: ").concat(code));
     }
     else {
         return "An error has ocurred";

@@ -5,7 +5,7 @@ var username;
 username = "alan";
 // tenemos una cadena, TS confia en mi
 var message = username.length > 5
-    ? "welcome " + username
+    ? "welcome ".concat(username)
     : "username is too short";
 console.log("message", message);
 var usernameWithId = "alanmaranto 1";
@@ -15,7 +15,7 @@ console.log("Username only", username);
 // Sintaxis 'as'
 message =
     username.length > 5
-        ? "welcome " + username
+        ? "welcome ".concat(username)
         : "username is too short";
 console.log("message", message);
 var helloUser;

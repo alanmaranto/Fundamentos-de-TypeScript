@@ -1,5 +1,5 @@
 // Void
-
+export {};
 // Tipo explicito
 function showInfo(user: any): any {
   console.log("user info", user.id, user.username, user.firstName);
@@ -41,12 +41,12 @@ try {
 } catch (error) {}
 
 function sumNumbers(limit: number): never {
-    let sum = 0;
-    while(true) {
-        sum++;
-    }
-    // return sum;
+  let sum = 0;
+  while (true) {
+    sum++;
+  }
+  // return sum;
 }
 
-sumNumbers(10)
+sumNumbers(10);
 // ciclo infinito, programa nunca termina
